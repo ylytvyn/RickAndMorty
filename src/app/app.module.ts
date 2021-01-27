@@ -10,6 +10,9 @@ import { CharactersComponent } from './components/characters/characters.componen
 import { LocationsComponent } from './components/locations/locations.component';
 import { EpisodesComponent } from './components/episodes/episodes.component';
 import { EpisodesWindowComponent } from './components/episodes-window/episodes-window.component';
+import { FilterCharactersComponent } from './components/filter-characters/filter-characters.component';
+import { FormsModule } from '@angular/forms';
+import { AlertComponent } from './components/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -17,17 +20,21 @@ import { EpisodesWindowComponent } from './components/episodes-window/episodes-w
     CharactersComponent,
     LocationsComponent,
     EpisodesComponent,
-    EpisodesWindowComponent
+    EpisodesWindowComponent,
+    FilterCharactersComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   entryComponents: [
-    EpisodesWindowComponent
+    EpisodesWindowComponent,
+    AlertComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

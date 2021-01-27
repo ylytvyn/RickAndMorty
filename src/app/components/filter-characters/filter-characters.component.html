@@ -1,0 +1,39 @@
+<div class="filter">
+    <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="criteria.name">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Status</mat-label>
+        <mat-select [(value)]="criteria.status">
+            <mat-option>None</mat-option>
+            <mat-option *ngFor="let status of statuses" 
+                      [value]="status">
+            {{status}}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Species</mat-label>
+        <mat-select [(value)]="criteria.species">
+            <mat-option>None</mat-option>
+            <mat-option *ngFor="let specie of speciesList" 
+                      [value]="specie">
+            {{specie}}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Gender</mat-label>
+        <mat-select [(value)]="criteria.gender">
+            <mat-option>None</mat-option>
+            <mat-option *ngFor="let gender of genders" 
+                      [value]="gender">
+            {{gender}}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

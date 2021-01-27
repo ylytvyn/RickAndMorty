@@ -2,6 +2,7 @@
 
 .window {
     position: relative;
+    max-height: 80vh;
 
     &__close {
         @include pos($r: 0, $t: 0);

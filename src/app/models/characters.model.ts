@@ -18,6 +18,13 @@ export interface ILocation {
     url: string;
 }
 
+export interface IFilterCharacter {
+    name?: string;
+    status?: StatusEnum;
+    species?: SpeciesEnum;
+    gender?: GenderEnum;
+}
+
 export enum StatusEnum {
     Alive = 'Alive',
     Dead = 'Dead',
