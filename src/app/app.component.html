@@ -6,24 +6,34 @@
     <li class="menu__item" routerLink="/characters" routerLinkActive="menu__item--active">
       <button mat-button>
         <mat-icon>supervised_user_circle</mat-icon>
-        <span>Characters</span>
+        <span>{{'HERO_CHARACTERS' | translate}}</span>
       </button>
     </li>
 
     <li class="menu__item" routerLink="/locations" routerLinkActive="menu__item--active">
       <button mat-button>
         <mat-icon>public</mat-icon>
-        <span>Locations</span>
+        <span>{{'HERO_LOCATIONS' | translate}}</span>
       </button>
     </li>
 
     <li class="menu__item" routerLink="/episodes" routerLinkActive="menu__item--active">
       <button mat-button>
         <mat-icon>movie_filter</mat-icon>
-        <span>Episodes</span>
+        <span>{{'HERO_EPISODES' | translate}}</span>
       </button>
     </li>
   </ul>
+
+  <div class="switch-lang">
+    <mat-select [value]="translate.currentLang" #langSelect
+                (selectionChange)="switchLang(langSelect.value)">
+      <mat-option *ngFor="let lang of translate.getLangs()"
+                  [value]="lang">
+        {{lang | uppercase}}
+      </mat-option>
+    </mat-select>
+  </div>
 
   <div class="dropdown">
     <button mat-icon-button [matMenuTriggerFor]="menu">
@@ -33,7 +43,7 @@
     <mat-menu #menu="matMenu">
       <button mat-menu-item class="dropdown__item">
         <mat-icon>login</mat-icon>
-        <span>Login</span>
+        <span>{{'HERO_LOGIN' | translate}}</span>
       </button>
     </mat-menu>
   </div>

@@ -32,8 +32,17 @@ export enum StatusEnum {
 }
 
 export enum SpeciesEnum {
-    Alien = 'Alien',
-    Human = 'Human'
+    Alien = "Alien",
+    Human = "Human",
+    Humanoid = "Humanoid",
+    MythologicalCreature = "Mythological Creature",
+    Poopybutthole = "Poopybutthole",
+    Animal = "Animal",
+    Robot = "Robot",
+    Cronenberg = "Cronenberg",
+    Disease = "Disease",
+    Planet = "Planet",
+    Unknown = "unknown"
 }
 
 export enum GenderEnum {

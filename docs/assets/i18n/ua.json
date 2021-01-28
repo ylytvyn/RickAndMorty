@@ -1,0 +1,20 @@
+{
+    "HERO_CHARACTERS": "Персонажі",
+    "HERO_LOCATIONS": "Місця",
+    "HERO_EPISODES": "Серії",
+    "HERO_LOGIN": "Вхід",
+
+    "LABEL_CLEAR": "Очистити",
+    "LABEL_FILTER": "Фільтрувати",
+    "LABEL_LAST_KNOWN": "Останне відоме місцезнаходження",
+    "LABEL_SHOW_EPISODES": "Список серій",
+
+    "LABEL_NAME": "Імєнованіє",
+    "LABEL_NONE": "Німа",
+    "LABEL_STATUS": "Статус",
+    "LABEL_SPECIES": "Походження",
+    "LABEL_GENDER": "Стать",
+
+    "MSG_SERVER_NOT_RESPONDING": "Сервер - прідатєль!",
+    "MSG_SOMETHING_WRONG": "Шось пішло не так, друже..."
+}

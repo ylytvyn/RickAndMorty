@@ -1,1 +1,11 @@
-<h1 class="title">Episodes</h1>
+<h1 class="title">{{'HERO_EPISODES' | translate}}</h1>
+
+<div class="episodes">
+    <div class="episode"
+        *ngFor="let item of episodes">
+        <a href="{{getEpisodeURL(item.episode)}}"
+           target="_blank">
+            {{item.episode}}: {{item.name}}
+        </a>
+    </div>
+</div>

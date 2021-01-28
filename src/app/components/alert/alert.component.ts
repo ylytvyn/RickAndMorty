@@ -1,5 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatSnackBarRef, MAT_SNACK_BAR_DATA } from '@angular/material/snack-bar';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-alert',
@@ -10,6 +11,7 @@ export class AlertComponent implements OnInit {
   public message: string = '';
 
   constructor(
+    public translate: TranslateService,
     private alert: MatSnackBarRef<AlertComponent>,
     @Inject(MAT_SNACK_BAR_DATA) public data: any
   ) { }
@@ -20,10 +22,10 @@ export class AlertComponent implements OnInit {
         this.message = this.data.error.error;
         break;
       case 0:
-        this.message = 'Server is not responding';
+        this.translate.get('MSG_SERVER_NOT_RESPONDING').subscribe((text: string) => this.message = text);
         break;
       default:
-        this.message = 'Something is going wrong';
+        this.translate.get('MSG_SOMETHING_WRONG').subscribe((text: string) => this.message = text);
         break;
     }
   }

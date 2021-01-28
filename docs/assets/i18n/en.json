@@ -1,0 +1,20 @@
+{
+    "HERO_CHARACTERS": "Characters",
+    "HERO_LOCATIONS": "Locations",
+    "HERO_EPISODES": "Episodes",
+    "HERO_LOGIN": "Login",
+
+    "LABEL_CLEAR": "Clear",
+    "LABEL_FILTER": "Filter",
+    "LABEL_LAST_KNOWN": "Last known location",
+    "LABEL_SHOW_EPISODES": "Show list episodes",
+
+    "LABEL_NAME": "Name",
+    "LABEL_NONE": "None",
+    "LABEL_STATUS": "Status",
+    "LABEL_SPECIES": "Species",
+    "LABEL_GENDER": "Gender",
+
+    "MSG_SERVER_NOT_RESPONDING": "Server is not responding",
+    "MSG_SOMETHING_WRONG": "Something is going wrong"
+}
